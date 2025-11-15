@@ -86,10 +86,11 @@ body {
 
 nav ul {
   transition: 0.4s;
+  display: none;
 }
 
 nav ul.active {
-  display: flex;
+  display: block;
 }
 
 /* ===== HERO ===== */
