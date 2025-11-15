@@ -44,26 +44,64 @@
     <section class="about" id="about">
       <h2>About Me</h2>
       <article>
-        I’m a passionate Full Stack Developer who enjoys building real-world
-        applications that make an impact. Skilled in Java, Spring Boot,
-        Hibernate, and web technologies like HTML, CSS, and JavaScript — I take
-        pride in writing clean, maintainable, and efficient code. My goal is to
-        create software that’s both powerful and user-friendly.
+        I am a Full Stack Developer with strong experience in Java, Spring Boot,
+        Hibernate, JDBC, and backend development. My journey started with a
+        curiosity to understand how software works, and today I build complete
+        applications—from database design to REST APIs, and from UI creation to
+        deployment. I enjoy solving problems using clean code, logical thinking,
+        and structured design. I have developed multiple real-world projects
+        including billing systems, e-commerce platforms, and booking software.
+        Each project helped me learn how to design scalable backends, optimize
+        SQL queries, build APIs, and make user-friendly frontends with HTML,
+        CSS, and JavaScript. I’m continuously learning new tools and
+        technologies, and I love working on challenging tasks that allow me to
+        grow as a developer. Whether it's freelancing, collaborating with teams,
+        or building my own ideas, I aim to deliver work that creates value and
+        makes a meaningful impact.
       </article>
     </section>
 
     <!-- ====== SKILLS SECTION ====== -->
     <section class="skills" id="skills">
       <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <div>Java (Core & Advanced)</div>
-        <div>Spring Boot / Hibernate</div>
-        <div>JDBC / Servlets / JSP</div>
-        <div>HTML / CSS / JavaScript</div>
-        <div>SQL / Database Management</div>
-        <div>RESTful APIs / Postman</div>
-        <div>Git / GitHub / Eclipse</div>
-        <div>Problem Solving</div>
+
+      <div class="skills-wrapper">
+        <!-- Frontend Card -->
+        <div class="skill-card">
+          <h3>Frontend Technologies</h3>
+          <div class="skill-items">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Backend Card -->
+        <div class="skill-card">
+          <h3>Backend Technologies</h3>
+          <div class="skill-items">
+            <span>Java (Core & Advanced)</span>
+            <span>Spring Boot</span>
+            <span>Hibernate</span>
+            <span>JDBC</span>
+            <span>Servlets</span>
+            <span>JSP</span>
+          </div>
+        </div>
+
+        <!-- Tools Card -->
+        <div class="skill-card">
+          <h3>Tools & Other Skills</h3>
+          <div class="skill-items">
+            <span>SQL</span>
+            <span>Database Management</span>
+            <span>REST APIs</span>
+            <span>Postman</span>
+            <span>Git / GitHub</span>
+            <span>Eclipse</span>
+            <span>Problem Solving</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -120,5 +158,13 @@
     <footer>
       <p>&copy; 2025 Vinit Phadtare | Built with ❤️</p>
     </footer>
+    <script>
+      const ham = document.querySelector(".hamburger");
+      const menu = document.querySelector("nav ul");
+
+      ham.onclick = () => {
+        menu.classList.toggle("active");
+      };
+    </script>
   </body>
 </html>
